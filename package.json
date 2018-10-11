@@ -1,0 +1,20 @@
+{
+  "name": "@writetome51/get-in-ascending-order",
+  "version": "1.0.1",
+  "description": "A function that takes an array of numbers and puts them in ascending order",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "numbers",
+    "sorting"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "dependencies": {
+    "basic-data-handling": "latest",
+    "@writetome51/get-cautiously-rounded":"latest",
+    "@writetome51/number-analysis-basic": "latest"
+  }
+}
