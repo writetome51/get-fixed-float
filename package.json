@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "basic-data-handling": "latest",
-    "@writetome51/get-right-of-decimal": "latest",
-    "@writetome51/get-left-of-decimal": "latest"
+    "@writetome51/get-rounded-to-precision": "latest",
+    "@writetome51/get-float-padded-on-right-if-needed": "latest"
   }
 }

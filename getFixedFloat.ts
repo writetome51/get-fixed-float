@@ -1,8 +1,9 @@
 import { errorIfNotIntegerZeroOrGreater } from 'basic-data-handling/errorIfNotIntegerZeroOrGreater';
 import { errorIfNotNumber } from 'basic-data-handling/errorIfNotNumber';
 import { isFloat } from 'basic-data-handling/isInteger_isFloat';
-import { getRoundedToPrecision } from './getRoundedToPrecision';
-import { getFloatPaddedOnRight } from './getFloatPaddedOnRight';
+import { getRoundedToPrecision } from '@writetome51/get-rounded-to-precision/getRoundedToPrecision';
+import { getFloatPaddedOnRight_ifNeeded } 
+	from '@writetome51/get-float-padded-on-right-if-needed/getFloatPaddedOnRight_ifNeeded';
 
 
 export function getFixedFloat(num, numDigitsAfterDecimal): string {
@@ -11,5 +12,5 @@ export function getFixedFloat(num, numDigitsAfterDecimal): string {
 
 	if (isFloat(num)) num = getRoundedToPrecision(numDigitsAfterDecimal, num);
 
-	return getFloatPaddedOnRight(num, numDigitsAfterDecimal);
+	return getFloatPaddedOnRight_ifNeeded(num, numDigitsAfterDecimal);
 }
