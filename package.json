@@ -1,6 +1,6 @@
 {
-  "name": "@writetome51/get-in-ascending-order",
-  "version": "1.0.1",
+  "name": "@writetome51/get-fixed-float",
+  "version": "1.0.0",
   "description": "A function that takes an array of numbers and puts them in ascending order",
   "main": "",
   "scripts": {
@@ -14,7 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "basic-data-handling": "latest",
-    "@writetome51/get-cautiously-rounded":"latest",
-    "@writetome51/number-analysis-basic": "latest"
+    "@writetome51/get-right-of-decimal": "latest",
+    "@writetome51/get-left-of-decimal": "latest",
+    "@writetome51/get-cautiously-rounded": "latest"
   }
 }

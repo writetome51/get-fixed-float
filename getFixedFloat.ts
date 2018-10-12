@@ -1,16 +1,27 @@
-import {getCautiouslyRounded} from '@writetome51/get-cautiously-rounded/getCautiouslyRounded';
-import {errorIfNotFloat} from 'basic-data-handling/errorIfNotFloat';
+import { errorIfNotIntegerZeroOrGreater } from 'basic-data-handling/errorIfNotIntegerZeroOrGreater';
+import { errorIfNotNumber } from 'basic-data-handling/errorIfNotNumber';
+import { isFloat } from 'basic-data-handling/isInteger_isFloat';
+import { getRightOfDecimal } from '@writetome51/get-right-of-decimal/getRightOfDecimal';
+import { getLeftOfDecimal } from '@writetome51/get-left-of-decimal';
+import { getRoundedToPrecision } from './getRoundedToPrecision';
 
 
-export function getFixedFloat(num, numDigitsAfterDecimal): number {
-	errorIfNotFloat(num);
-	let numLength = String(num).length;
-	let factor = 1;
-	let i = -1;
-	while(++i < numLength) {
-		factor *= 10;
+export function getFixedFloat(num, numDigitsAfterDecimal): string {
+	errorIfNotNumber(num);
+	errorIfNotIntegerZeroOrGreater(numDigitsAfterDecimal);
+
+	if (isFloat(num)) num = getRoundedToPrecision(numDigitsAfterDecimal, num);
+
+	let fraction = '';
+	if (isFloat(num)) {
+		fraction = getRightOfDecimal(num);
+		num = getLeftOfDecimal(num);
 	}
-	let tempNum = num * factor;
-	tempNum = getCautiouslyRounded(tempNum);
-	tempNum = tempNum / factor;
+	while (fraction.length < numDigitsAfterDecimal) fraction += '0';
+
+	if (fraction.length > 0) return (String(num) + '.' + fraction);
+	else return String(num);
 }
+
+
+console.log(getFixedFloat(-100.975, 2));
