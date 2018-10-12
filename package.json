@@ -1,21 +1,23 @@
 {
   "name": "@writetome51/get-fixed-float",
   "version": "1.0.0",
-  "description": "A function that takes an array of numbers and puts them in ascending order",
+  "description": "Returns number with fixed number of digits after the decimal.\n It also rounds cautiously to avoid cumulative errors",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "numbers",
-    "sorting"
+    "rounding",
+    "fixed",
+    "precision",
+    "float"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
   "dependencies": {
     "basic-data-handling": "latest",
     "@writetome51/get-right-of-decimal": "latest",
-    "@writetome51/get-left-of-decimal": "latest",
-    "@writetome51/get-cautiously-rounded": "latest"
+    "@writetome51/get-left-of-decimal": "latest"
   }
 }

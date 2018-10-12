@@ -1,1 +1,0 @@
-A function that takes an array of numbers and puts them in ascending order.
