@@ -1,4 +1,4 @@
-import { getFixedFloat } from './getFixedFloat';
+import { getFixedFloat } from './index';
 
 
 console.log(getFixedFloat(-100.9754, 5));
