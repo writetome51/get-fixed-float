@@ -9,7 +9,7 @@ function getFixedFloat(num, numDigitsAfterDecimal) {
     errorIfNotNumber_1.errorIfNotNumber(num);
     errorIfNotIntegerZeroOrGreater_1.errorIfNotIntegerZeroOrGreater(numDigitsAfterDecimal);
     if (isInteger_isFloat_1.isFloat(num))
-        num = get_rounded_to_precision_1.getRoundedToPrecision(numDigitsAfterDecimal, num);
+        num = get_rounded_to_precision_1.getRoundedToPrecision(num, numDigitsAfterDecimal);
     return get_float_padded_on_right_if_needed_1.getFloatPaddedOnRight_ifNeeded(num, numDigitsAfterDecimal);
 }
 exports.getFixedFloat = getFixedFloat;

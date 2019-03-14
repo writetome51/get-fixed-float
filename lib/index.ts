@@ -9,7 +9,7 @@ export function getFixedFloat(num, numDigitsAfterDecimal): string {
 	errorIfNotNumber(num);
 	errorIfNotIntegerZeroOrGreater(numDigitsAfterDecimal);
 
-	if (isFloat(num)) num = getRoundedToPrecision(numDigitsAfterDecimal, num);
+	if (isFloat(num)) num = getRoundedToPrecision(num, numDigitsAfterDecimal);
 
 	return getFloatPaddedOnRight_ifNeeded(num, numDigitsAfterDecimal);
 }
