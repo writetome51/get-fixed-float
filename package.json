@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/get-fixed-float",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Returns number with fixed number of digits after the decimal.\n It also rounds cautiously to avoid cumulative errors",
   "type": "module",
   "main": "dist/index.js",
