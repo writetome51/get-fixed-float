@@ -1,4 +1,6 @@
-import { getFixedFloat } from './index.js';
+import {getFixedFloat} from './index.js';
+
+
 console.log(getFixedFloat(-100.9754, 5)); // -100.97540
 console.log(getFixedFloat(-1.9754, 1)); // '-2.0'
 console.log(getFixedFloat(-10.9754, 1)); // '-11.0'
