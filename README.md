@@ -6,7 +6,7 @@ rounded to the last required digit after the decimal.
 The algorithm prevents cumulative rounding errors.
 
 ## Examples
-```
+```js
 getFixedFloat(101.975, 3); // --> '101.975'
 
 getFixedFloat(-10.7754, 1); // --> '-10.8'
@@ -26,10 +26,6 @@ getFixedFloat(10.9754, 1); // --> '11.0'
 `npm i  @writetome51/get-fixed-float`
 
 ## Loading
-```
-// if using TypeScript:
+```js
 import {getFixedFloat}  from '@writetome51/get-fixed-float';
-    
-// if using ES5 JavaScript:
-var getFixedFloat = require('@writetome51/get-fixed-float').getFixedFloat;
 ```
