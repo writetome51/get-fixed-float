@@ -1,10 +1,10 @@
 {
   "name": "@writetome51/get-fixed-float",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Returns number with fixed number of digits after the decimal.\n It also rounds cautiously to avoid cumulative errors",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -18,10 +18,9 @@
   "author": "Steve Thompson",
   "license": "MIT",
   "dependencies": {
-    "error-if-not-finite-number": "^2.0.0",
-    "error-if-not-integer-zero-or-greater": "^2.0.0",
-    "@writetome51/get-rounded-to-precision": "^3.0.0",
-    "@writetome51/get-float-padded-on-right-if-needed": "^2.0.0",
-    "@writetome51/is-integer-is-float": "^2.0.0"
+    "@writetome51/get-float-padded-on-right-if-needed": ">=2.0.0",
+    "@writetome51/get-rounded-to-precision": ">=3.0.0",
+    "@writetome51/is-integer-is-float": ">=2.0.0",
+    "error-if-not-integer-zero-or-greater": ">=2.0.0"
   }
 }
